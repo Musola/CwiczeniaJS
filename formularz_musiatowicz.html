@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz Modelingu - Musiatowicz</title>
+    <title>Formularz Modelingu</title>
 
     <style>
         body {
@@ -66,6 +64,19 @@
     <h2>Formularz Modelingu</h2>
 
     <form action="/submit" method="post">
+        <!-- Imię -->
+        <label for="imie">Imię:</label>
+        <input type="text" id="imie" name="imie" required>
+
+        <!-- Nazwisko -->
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" id="nazwisko" name="nazwisko" required>
+
+        <!-- PESEL -->
+        <label for="pesel">PESEL:</label>
+        <input type="text" id="pesel" name="pesel" pattern="\d{11}" placeholder="12345678901" required>
+        <small>Podaj 11 cyfr PESEL.</small>
+
         <!-- Pytanie 1: Jaki masz kolor oczu? -->
         <label for="kolor_oczu">Jaki masz kolor oczu?</label>
         <input type="text" id="kolor_oczu" name="kolor_oczu" required>
