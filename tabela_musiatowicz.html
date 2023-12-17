@@ -14,7 +14,7 @@
     th, td {
       border: 1px solid #dddddd;
       text-align: left;
-      padding: 8px;
+      padding: 30px;
     }
 
     th {
@@ -22,12 +22,12 @@
       color: #FFFFFF; /* Biały tekst */
     }
  .line-one {
-      background-color: #800000; /* Kolor ciemniejszy od czereśniowego */
+      background-color: #9e1402; /* Kolor ciemniejszy od czereśniowego */
     }
 
 
     .line-two {
-      background-color: #800000; /* Kolor ciemniejszy od czereśniowego */
+      background-color: #ed1c00; /* Kolor ciemniejszy od czereśniowego */
     }
 
     .line-three {
@@ -35,42 +35,56 @@
     }
 
     .line-four {
-      background-color: #FFE4B5; /* Kolor jasno brzoskwiniowy */
+      background-color: #fc553f; /* Kolor jasno brzoskwiniowy */
     }
 
     .line-five {
-      background-color: #FF6347; /* Kolor odcienia dyniowego */
+      background-color: #fc9a8d; /* Kolor odcienia dyniowego */
     }
 
     .line-six {
-      background-color: #D2B48C; /* Kolor jasno brązowy */
+      background-color: #ff9763; /* Kolor jasno brązowy */
     }
 
     .line-seven {
-      background-color: #8B4513; /* Kolor ciemno brązowy */
+      background-color: #e35f1e; /* Kolor ciemno brązowy */
+
+    }
+	
+	 .line-eight {
+      background-color: #823712; /* Kolor ciemno brązowy */
       color: #FFFFFF; /* Biały tekst */
+	  text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <h2>Karty Graficzne AMD - Musiatowicz Olaf 2Fg2</h2>
 
+  
   <table>
+  <thead>
+      <tr>
+        <th colspan="5" align="center">Karty Graficzne AMD - Musiatowicz Olaf 2Fg2</th>
+      </tr>
+    </thead>
+  
     <thead>
       <tr>
         <th>MODEL</th>
         <th>TAKTOWANIE</th>
         <th>ROZM. PAMIĘCI</th>
         <th>SZYNA PAMIĘCI</th>
+		<th>CHŁODZENIE</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class="line-one">
         <td>RX 6700 XT</td>
         <td>2321 MHz</td>
         <td>12GB</td>
         <td>192 bit</td>
+		<td rowspan="7">AKTYWNE</td>
       </tr>
       <tr class="line-two">
         <td>RX 7800 XT</td>
@@ -108,7 +122,14 @@
         <td>8GB</td>
         <td>256 bit</td>
       </tr>
-    </tbody>
+	  <tr class="line-eight">
+        <td colspan="5">Karty Graficzne AMD</td>
+      </tr>
+    
+	
+	
+	
+	</tbody>
   </table>
 
 </body>
