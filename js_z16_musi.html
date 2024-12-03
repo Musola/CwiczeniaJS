@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>proste obliczenia</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="color: red;font-size: 100px;">
+            <script>
+               var liczba1 = prompt("A=", "");
+var a_musi = parseFloat(liczba1);
+var liczba2 = prompt("B=", "");
+var b_musi = parseFloat(liczba2);
+document.write("A=" + a_musi + " " + "B=" + b_musi + "<br>");
+var c_musi = a_musi * a_musi * a_musi;
+var d_musi = 3 * a_musi * a_musi * b_musi;
+var e_musi = 3 * a_musi * b_musi * b_musi;
+var f_musi = b_musi * b_musi * b_musi;
+var o_musi = c_musi + d_musi + e_musi + f_musi;
+document.write("(" + a_musi + " + " + b_musi + ")^3=" + a_musi + "^3 + 3*((" + a_musi + ")^2)*(" + b_musi + ") + 3*(" + a_musi + ")*((" + b_musi + ")^2) +" + b_musi + "^3 =" + c_musi + " + " + d_musi + " + " + e_musi + " + " + f_musi + " = " + o_musi + "<br>");
+
+            </script>
+        </div>
+    </body>
+</html>
