@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>KOD DO ZADANIA 20</h1>
+		<textarea style="width: 98%; height: 300px;">
+		
+		<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function AB_mus() {
+                let aX_mus = parseFloat(document.getElementById('aX').value);
+                let aY_mus = parseFloat(document.getElementById('aY').value);
+                let bX_mus = parseFloat(document.getElementById('bX').value);
+                let bY_mus = parseFloat(document.getElementById('bY').value);
+                document.getElementById("odpowiedz").innerHTML = "AB= "
+                    + (Math.sqrt((aX_mus - bX_mus) ** 2 + (aY_mus - bY_mus) ** 2)).toFixed(2);
+            }
+            
+            function BC_mus() {
+                let bX_mus = parseFloat(document.getElementById('bX').value);
+                let bY_mus = parseFloat(document.getElementById('bY').value);
+                let cX_mus = parseFloat(document.getElementById('cX').value);
+                let cY_mus = parseFloat(document.getElementById('cY').value);
+                document.getElementById("odpowiedz").innerHTML = "BC= "
+                    + (Math.sqrt((bX_mus - cX_mus) ** 2 + (bY_mus - cY_mus) ** 2)).toFixed(2);
+            }
+            
+            function AC_mus() {
+                let aX_mus = parseFloat(document.getElementById('aX').value);
+                let aY_mus = parseFloat(document.getElementById('aY').value);
+                let cX_mus = parseFloat(document.getElementById('cX').value);
+                let cY_mus = parseFloat(document.getElementById('cY').value);
+                document.getElementById("odpowiedz").innerHTML = "AC= "
+                    + (Math.sqrt((aX_mus - cX_mus) ** 2 + (aY_mus - cY_mus) ** 2)).toFixed(2);
+            }
+        </script>
+        <h1>ZADANIE 20 MUSIATOWICZ</h1><br><br>
+        Podaj X punktu A: <input type="text" id="aX"><br>
+        Podaj Y punktu A: <input type="text" id="aY"><br>
+        Podaj X punktu B: <input type="text" id="bX"><br>
+        Podaj Y punktu B: <input type="text" id="bY"><br>
+        Podaj X punktu C: <input type="text" id="cX"><br>
+        Podaj Y punktu C: <input type="text" id="cY"><br>
+        <input type="button" value="Oblicz AB" onclick="AB_mus()"><br><br>
+        <input type="button" value="Oblicz BC" onclick="BC_mus()"><br><br>
+        <input type="button" value="Oblicz AC" onclick="AC_mus()"><br><br>
+        <div id="odpowiedz"></div>
+    </body>
+</html>
+ </textarea>
+    </body>
+</html>	
