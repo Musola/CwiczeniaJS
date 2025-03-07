@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_musiatowicz() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <textarea name="musiatowicz" cols="120" rows="29" readonly>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        var Pociag = {
+            ilosc_wagonow: '15',
+            Rodzaj: 'polregio',
+            metoda_napedu: 'elektryczny silnik',
+
+            pociag_wyswietl_musiatowicz: function () {
+                document.write('ilosc wagonow: ' + this.ilosc_wagonow + '<br>');
+                document.write('Rodzaj: ' + this.Rodzaj + '<br>');
+                document.write('metoda_napedu: ' + this.metoda_napedu + '<br>');
+            }
+        };
+
+     
+        Pociag.pociag_wyswietl_musiatowicz();
+
+    
+        Pociag.godziny_jazdy = "6:00 - 23:30";
+        Pociag.pociag_pokaz_musiatowicz = function () { 
+            alert('godziny_jazdy: ' + this.godziny_jazdy); 
+        };
+    </script>
+</head>
+
+<body>
+    <br>
+    Programowanie obiektowe. <br>
+    Obiekt to Pociąg<br>
+    Pola:<br>
+    ilosc wagonow<br>
+    Rodzaj<br>
+    metoda napędu<br>
+    Metoda: Pociąg_wyswietl_musiatowicz<br>
+    nowe pole to godziny jazdy<br>
+    nowa metoda to pociag_pokaz_musiatowicz();<br>
+    <button onclick="Pociag.pociag_pokaz_musiatowicz()">Pokaż godziny_jazdy</button>
+</body>
+
+</html>
+
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_musiatowicz()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

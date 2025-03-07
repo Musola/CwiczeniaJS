@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Pociag(ilosc_wagonow, Rodzaj, metoda_napedu) {
+            this.ilosc_wagonow = ilosc_wagonow;
+            this.Rodzaj = Rodzaj;
+            this.metoda_napedu = metoda_napedu; 
+        }
+
+        Pociag.prototype.pociag_wyswietl_musiatowicz = function () {
+            document.write('ilosc_wagonow: ' + this.ilosc_wagonow + '<br>');
+            document.write('Rodzaj: ' + this.Rodzaj + '<br>');
+            document.write('metoda_napedu: ' + this.metoda_napedu + '<br>');
+            document.write('<hr>');
+        };
+
+        var pociag1 = new Pociag('15', 'polregio', 'elektryczny');
+        var pociag2 = new Pociag('17', 'SKM', 'elektryczny');
+        var pociag3 = new Pociag('12', 'PKM', 'Generator Dieselowy');
+
+        function showTask() {
+            pociag1.pociag_wyswietl_musiatowicz();
+            pociag2.pociag_wyswietl_musiatowicz();
+            pociag3.pociag_wyswietl_musiatowicz();
+        }
+
+        Pociag.prototype.godziny_jazdy = "6:00 - 23:00"; 
+
+        Pociag.prototype.pociag_pokaz_musiatowicz = function () {
+            alert('godziny_jazdy: ' + this.godziny_jazdy);
+        };
+
+        showTask(); 
+
+        
+        pociag1.pociag_pokaz_musiatowicz();
+    </script>
+</head>
+
+<body>
+    <p>Programowanie Obiektowe</p>
+</body>
+
+</html>
